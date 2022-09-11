@@ -1,0 +1,52 @@
+body {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.left-static {
+    height: 100%;
+    width: relative;
+    margin: auto;
+    padding: 10px;
+    float: left;
+    position: fixed;
+}
+.information {
+    height: relative;
+    width: 70%;
+    margin: auto;
+    float: right;
+    flex-wrap: wrap;
+}
+
+.about, .my-languages, .projects, .contact {
+    border-left-style: solid;
+    border-left-color: coral;
+    padding-left: 10px;
+}
+
+
+@media screen and (max-width: 1650px){
+    body {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-static, a {
+        width: 100%;
+        margin: auto;
+        float: none;
+        position: relative;
+    }
+    .information {
+        width: 100%;
+        margin: auto;
+        float: none;
+    }
+}

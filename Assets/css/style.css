@@ -3,18 +3,42 @@ body {
     margin: auto;
     padding: 10px;
     position: relative;
-    background-color: antiquewhite;
+    background-color: peachpuff;
+}
+
+
+button {
+    background-color: #ff7f50;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: auto auto;
+    width: auto;
+    cursor: pointer;
 }
 
 .left-static {
     height: 100%;
     width: relative;
     margin: auto;
-    padding: 10px;
+    padding: auto;
     float: left;
     position: fixed;
 }
+.main-h1-name {
+    text-align: center;
+}
+
+.vij-face img {
+    padding:auto;
+    height: auto;
+    width:100%;
+    flex-wrap: wrap;
+}
 .information {
+    padding: auto;
     height: relative;
     width: 70%;
     margin: auto;
@@ -22,14 +46,65 @@ body {
     flex-wrap: wrap;
 }
 
-.about, .my-languages, .projects, .contact {
+.one-grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0px;
+}
+
+.study img {
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px;
+}
+.business, .portfolio, .study {
+    border-style: solid;
+    border-color: black;
+}
+
+.business img, .portfolio img {
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.business:hover, .portfolio:hover, .study:hover {
+    opacity: 50%;
+}
+
+.contact-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 0px;
+}
+
+.contact img {
+    height: auto;
+    width:100px;
+    flex-wrap: wrap;
+
+}
+
+.about, .my-languages, .projects, .contact { 
     border-left-style: solid;
-    border-left-color: coral;
+    border-left-color: #ff7f50;
     padding-left: 10px;
 }
 
 
-@media screen and (max-width: 1650px){
+@media screen and (max-width: 1800px){
     body {
         width: 100%;
         margin: auto;
